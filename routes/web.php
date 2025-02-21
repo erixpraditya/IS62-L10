@@ -28,3 +28,10 @@ Route::fallback(function () {
 Route::get('mahasiswa/{nama}', function ($nama){
     echo "Ini Halaman Mahasiswa dengan nama $nama";
 });
+
+Route::get('/mahasiswa', function () {
+    $kelas = 'IS65';
+    $data = ["erix", "praditya", "rix", "Raditya", "aditya"];
+    // return view('mahasiswa.index')->with('mhs', $data);
+    return view('mahasiswa.index', compact('kelas','data'));
+});
