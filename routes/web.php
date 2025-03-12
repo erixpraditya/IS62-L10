@@ -37,7 +37,7 @@ Route::get('/', function () {
 // });
 Route::get('/mahasiswa', function(){
     $nama = "Erix Praditya";
-    $nilai = 20;
+    $nilai = 100;
 
     $nilai2 = [80,20,60,50,40];
 
