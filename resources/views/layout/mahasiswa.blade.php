@@ -34,9 +34,24 @@
         </div>
     </nav>
 
-      <div>
+    <div class="container text-center mt-3 bg-whi">
+        <h2 class="mb-3">Data Mahasiswa</h2>
+        <div class="row">
+            <div class="m-auto col-6">
+                <ol class="list-group">
+                    @forelse ($data_mhs as $msw)
+                    <li class="list-group-item">{{$msw}}</li>
+                    @empty
+                    <div class="alert alert-secondary" role="alert">
+                        Maaf data dosen tidak ada
+                      </div>
+                    @endforelse
 
-      </div>
+                </ol>
+        </div>
+        </div>
+        {{-- konten --}}
+    </div>
       <footer class="fixed-bottom bg-dark text-white py-2 mt-4 text-center">
         Copyright &copy; Erix pradityaa - 2025
     </footer>
