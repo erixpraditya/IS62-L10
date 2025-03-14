@@ -45,6 +45,18 @@
             @empty
             <div class="alert alert-secondary d-inline-block">Data Nilai Tidak Ada</div>
         @endforelse
+        <hr>
+
+        @forelse ($nilai2 as $val2)
+        @if($val2 <=50)
+
+            @continue
+
+        @endif
+        <div class="alert alert-secondary d-inline-block">{{$val2}}</div>
+        @empty
+        <div class="alert alert-secondary d-inline-block">Data Nilai Tidak Ada</div>
+    @endforelse
     </div>
     <hr>
     <div class="text-center">

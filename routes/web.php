@@ -35,11 +35,25 @@ Route::get('/', function () {
 //     // return view('mahasiswa.index')->with('mhs', $data);
 //     return view('mahasiswa.index', compact('kelas','data'));
 // });
-Route::get('/mahasiswa', function(){
-    $nama = "Erix Praditya";
-    $nilai = 100;
+// Route::get('/mahasiswa', function(){
+//     $nama = "Erix Praditya";
+//     $nilai = 100;
 
-    $nilai2 = [80,20,60,50,40];
+//     $nilai2 = [80,20,60,50,40];
 
-    return view('mahasiswa', compact('nama','nilai','nilai2'));
+//     return view('mahasiswa', compact('nama','nilai','nilai2'));
+// });
+
+Route::get('/mahasiswa', function (){
+    $data_mhs = ["Abdul", "Adha", "Aidil", "Alif", "Asfia"];
+    return view('layout.mahasiswa', compact('data_mhs'));
+});
+
+Route::get('/dosen', function (){
+    $data_dos = ["Ismanuddin", "Mustofa", "Rita", "Ridha", "Dzulgunar"];
+    return view('layout.dosen', compact('data_dos'));
+});
+
+Route::get('/galeri', function (){
+    return view('layout.galeri');
 });
