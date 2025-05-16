@@ -2,6 +2,9 @@
 @section('title')
     Data Mahasiswa
 @endsection
+@section('menumhs')
+    active
+@endsection
 
 @section('konten')
 <div class="container text-center mt-3 bg-white">

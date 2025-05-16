@@ -1,38 +1,31 @@
 @extends('layout.master')
 @section('title')
-Galeri Foto
+    Galeri
 @endsection
-@section('MenuGal','active')
+@section('menugal')
+    active
+@endsection
 
 @section('konten')
-    <div class="container text-center mt-3 bg-white">
-        <h2 class="mb-3">Galeri Foto</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 1.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 2.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 3.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 4.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 5.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-
-            <div class="col-4">
-                <img src="{{asset('/image/halaman 6.png')}}" class="img-thumbnail img-fluid" alt="">
-            </div>
-        </div>
-
-        {{-- konten --}}
-    </div>
-    @endsection
+<div class="container text-center mt-3 bg-white">
+  <h2 class="mb-3">Galeri Foto</h2>
+  <div class="row">
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k1.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k2.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k3.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k4.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k5.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+      <div class="m-auto col-4">
+          <img src="{{ asset('/img/k6.jpg')}}" class="img-thumbnail img-fluid" alt="">
+      </div>
+@endsection
