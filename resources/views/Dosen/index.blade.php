@@ -20,18 +20,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                            @forelse ( $dosen as $data )
+                                <tr>
+                                <th scope="row">{{$nomor++}}</th>
+                                <td>{{$data->nidn}}</td>
+                                <td>{{$data->nama}}</td>
+                                <td>{{$data->email}}</td>
                                 <td>
                                     <a href="" class="btn btn-warning btn-sm">detail</a>
                                     <a href="" class="btn btn-info btn-sm">edit</a>
                                     <a href="" class="btn btn-danger btn-sm">hapus</a>
                                 </td>
                             </tr>
+                            @empty
 
+                            @endforelse
                         </tbody>
                     </table>
                 </div>

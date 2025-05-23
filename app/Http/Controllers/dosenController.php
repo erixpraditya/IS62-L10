@@ -13,7 +13,9 @@ class dosenController extends Controller
     public function index()
     {
         //menampilkan data dosen
-        return view('Dosen.index');
+        $dosen = Dosen::all();
+        $nomor = 1;
+        return view('Dosen.index', compact('dosen','nomor'));
     }
 
     /**
